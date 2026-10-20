@@ -1,0 +1,35 @@
+[
+  {
+    "family": "Geist Sans",
+    "roles": [
+      "body"
+    ],
+    "licence": "free",
+    "licenceName": "SIL Open Font License (Geist, served as \"Geist Sans\")",
+    "install": "next/font/google (Geist) or npm i @fontsource-variable/geist",
+    "alternative": null,
+    "note": "The site names it \"Geist Sans\"; its file is Geist. Install Geist from Google Fonts or Fontsource."
+  },
+  {
+    "family": "Geist Pixel Square",
+    "roles": [
+      "display"
+    ],
+    "licence": "free",
+    "licenceName": "SIL Open Font License (Geist Pixel, served as \"Geist Pixel Square\")",
+    "install": "next/font/google (Geist_Pixel) or npm i @fontsource-variable/geist-pixel",
+    "alternative": null,
+    "note": "The site names it \"Geist Pixel Square\"; its file is Geist Pixel. Install Geist Pixel from Google Fonts or Fontsource."
+  },
+  {
+    "family": "Geist Mono",
+    "roles": [
+      "mono"
+    ],
+    "licence": "free",
+    "licenceName": "SIL Open Font License (Google Fonts)",
+    "install": "next/font/google (Geist_Mono) or npm i @fontsource-variable/geist-mono",
+    "alternative": null,
+    "note": "Install from Google Fonts or Fontsource, never from the source site."
+  }
+]

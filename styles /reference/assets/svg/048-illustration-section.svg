@@ -1,0 +1,24 @@
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 578 243" width="578" height="243" class="farm-route-wire pointer-events-none absolute inset-0 hidden h-full w-full sm:block"><style>.inset-0 { inset: 0px; }
+.pointer-events-none { pointer-events: none; }
+.absolute { position: absolute; }
+.inset-0 { inset: calc(var(--spacing) * 0); }
+.hidden { display: none; }
+.h-full { height: 100%; }
+.w-full { width: 100%; }
+.farm-route-wire path { fill: none; stroke: rgba(255, 255, 255, 0.32); stroke-width: 1px; stroke-dasharray: 1; stroke-dashoffset: 1px; animation: 0.42s cubic-bezier(0.22, 1, 0.36, 1) 0s 1 normal forwards running farm-route-draw; }
+.farm-route-wire circle { fill: rgba(255, 255, 255, 0.6); }
+.farm-route-wire rect { fill: rgb(0, 0, 0); stroke: rgba(255, 255, 255, 0.4); opacity: 0; animation: 0.16s ease-out 0.36s 1 normal forwards running farm-route-fade; }
+@media (prefers-reduced-motion: reduce) { .farm-route-explorer [data-hot] path[pathlength], .farm-route-wire path { stroke-dashoffset: 0; animation: auto ease 0s 1 normal none running none; } }
+@media (prefers-reduced-motion: reduce) { .farm-route-wire rect, .farm-route-json { opacity: 1; animation: auto ease 0s 1 normal none running none; } }
+.benchmark-hairline :-webkit-any(polygon, path, ellipse) { fill: rgb(0, 0, 0); stroke: rgba(255, 255, 255, 0.3); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; transition: stroke 0.18s linear; }
+.benchmark-hairline :is(polygon, path, ellipse) { fill: rgb(0, 0, 0); stroke: rgba(255, 255, 255, 0.3); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; transition: stroke 0.18s linear; }
+.benchmark-hairline [data-hot] :-webkit-any(polygon, path, ellipse) { stroke: rgba(255, 255, 255, 0.6); }
+.benchmark-hairline [data-hot] :is(polygon, path, ellipse) { stroke: rgba(255, 255, 255, 0.6); }
+.iso-scene :-webkit-any(polygon, path, ellipse) { stroke: rgba(255, 255, 255, 0.2); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.iso-scene :is(polygon, path, ellipse) { stroke: rgba(255, 255, 255, 0.2); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+@keyframes farm-route-draw { 
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes farm-route-fade { 
+  100% { opacity: 1; }
+}</style><path d="M308,132H314Q320,132 320,126V46Q320,40 326,40H343" pathLength="1" fill="none" stroke="rgba(255, 255, 255, 0.32)" stroke-dasharray="1px"/><circle cx="308" cy="132" r="1.75" fill="rgba(255, 255, 255, 0.6)"/><rect height="3" width="3" x="341.5" y="38.5" stroke="rgba(255, 255, 255, 0.4)"/></svg>

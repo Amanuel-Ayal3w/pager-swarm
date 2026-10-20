@@ -1,0 +1,2792 @@
+{
+ "url": "https://farmjs.dev/",
+ "idle": [
+  {
+   "path": "div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(1) > circle:nth-of-type(2)",
+   "property": "cx",
+   "changes": 96,
+   "from": "394.73375",
+   "to": "555.3275",
+   "settleMs": 1239,
+   "lerp": 0.081,
+   "range": 160.594
+  },
+  {
+   "path": "div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(1) > circle:nth-of-type(2)",
+   "property": "cy",
+   "changes": 96,
+   "from": "162.9375",
+   "to": "162.9375",
+   "settleMs": 1239,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > h1.max-w-full.font-medium > span.block.whitespace-nowrap:nth-of-type(2) > span.farm-hero-swap",
+   "property": "width",
+   "changes": 73,
+   "from": "326.094px",
+   "to": "486.697px",
+   "settleMs": 1239,
+   "lerp": 0.081,
+   "range": 160.591
+  },
+  {
+   "path": "div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(1) > path",
+   "property": "d",
+   "changes": 47,
+   "from": "M332.33375 147.4975 L332.33375 155.2175 Q332.33375 162.9375 341.33375 162.9375 L394.73375 162.9375",
+   "to": "M332.33375 147.4975 L332.33375 155.2175 Q332.33375 162.9375 341.33375 162.9375 L394.73375 162.9375",
+   "settleMs": 784,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(1) > circle:nth-of-type(1)",
+   "property": "cx",
+   "changes": 47,
+   "from": "332.33375",
+   "to": "332.33375",
+   "settleMs": 784,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(1) > circle:nth-of-type(1)",
+   "property": "cy",
+   "changes": 47,
+   "from": "147.4975",
+   "to": "147.4975",
+   "settleMs": 784,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "main > section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > a.farm-hero-tag",
+   "property": "transform",
+   "changes": 24,
+   "from": "translate3d(394.734px, 152.938px, 0px) scale(1)",
+   "to": "translate3d(555.327px, 152.938px, 0px) scale(1)",
+   "settleMs": 1235,
+   "lerp": 0.081,
+   "range": 160.453
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+   "property": "width",
+   "changes": 24,
+   "from": "346.574px",
+   "to": "507.168px",
+   "settleMs": 1235,
+   "lerp": 0.081,
+   "range": 160.454
+  },
+  {
+   "path": "div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(1) > path",
+   "property": "opacity",
+   "changes": 23,
+   "from": "1",
+   "to": "0",
+   "settleMs": 803,
+   "lerp": 0.063,
+   "range": 4.704
+  },
+  {
+   "path": "div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(1) > circle:nth-of-type(1)",
+   "property": "opacity",
+   "changes": 23,
+   "from": "1",
+   "to": "0",
+   "settleMs": 803,
+   "lerp": 0.063,
+   "range": 4.704
+  },
+  {
+   "path": "div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(1) > circle:nth-of-type(2)",
+   "property": "opacity",
+   "changes": 23,
+   "from": "1",
+   "to": "0",
+   "settleMs": 803,
+   "lerp": 0.063,
+   "range": 4.704
+  },
+  {
+   "path": "main > section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > a.farm-hero-tag",
+   "property": "--sw-fade",
+   "changes": 23,
+   "from": "1",
+   "to": "0",
+   "settleMs": 803,
+   "lerp": 0.123,
+   "range": 1
+  }
+ ],
+ "scroll": {
+  "movers": [
+   {
+    "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+    "property": "opacity",
+    "changes": 4,
+    "from": "0.926644",
+    "to": "0.247124",
+    "settleMs": 192,
+    "lerp": null,
+    "range": 0.555
+   },
+   {
+    "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+    "property": "transform",
+    "changes": 4,
+    "from": "translate3d(46.9812px, 78.1209px, 0px)",
+    "to": "translate3d(391.771px, 128.996px, 0px)",
+    "settleMs": 192,
+    "lerp": null,
+    "range": 281.739
+   },
+   {
+    "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+    "property": "height",
+    "changes": 4,
+    "from": "69.3766px",
+    "to": "18.5019px",
+    "settleMs": 192,
+    "lerp": null,
+    "range": 41.571
+   },
+   {
+    "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+    "property": "data-typewriter-phase",
+    "changes": 3,
+    "from": "deleting",
+    "to": "holding",
+    "settleMs": 1608,
+    "lerp": null,
+    "range": 0
+   },
+   {
+    "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex > svg",
+    "property": "class",
+    "changes": 2,
+    "from": "+text-white/46 -text-white/88",
+    "to": "+text-white/88 -text-white/46",
+    "settleMs": 915,
+    "lerp": null,
+    "range": 42
+   },
+   {
+    "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex > span.ml-2.shrink-0:nth-of-type(3)",
+    "property": "class",
+    "changes": 2,
+    "from": "+text-white/28 -text-white/64",
+    "to": "+text-white/64 -text-white/28",
+    "settleMs": 915,
+    "lerp": null,
+    "range": 36
+   },
+   {
+    "path": "li.min-w-0:nth-of-type(3) > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+    "property": "aria-current",
+    "changes": 1,
+    "from": "",
+    "to": "",
+    "settleMs": 915,
+    "lerp": null,
+    "range": 0
+   },
+   {
+    "path": "li.min-w-0:nth-of-type(3) > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+    "property": "class",
+    "changes": 1,
+    "from": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+    "to": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+    "settleMs": 915,
+    "lerp": null,
+    "range": 0
+   },
+   {
+    "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+    "property": "aria-current",
+    "changes": 1,
+    "from": "true",
+    "to": "true",
+    "settleMs": 915,
+    "lerp": null,
+    "range": 0
+   },
+   {
+    "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+    "property": "class",
+    "changes": 1,
+    "from": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+    "to": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+    "settleMs": 915,
+    "lerp": null,
+    "range": 0
+   },
+   {
+    "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > path",
+    "property": "d",
+    "changes": 1,
+    "from": "M308,216H314Q320,216 320,210V46Q320,40 326,40H343",
+    "to": "M308,216H314Q320,216 320,210V46Q320,40 326,40H343",
+    "settleMs": 915,
+    "lerp": null,
+    "range": 0
+   },
+   {
+    "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > circle",
+    "property": "cy",
+    "changes": 1,
+    "from": "216",
+    "to": "216",
+    "settleMs": 915,
+    "lerp": null,
+    "range": 0
+   }
+  ],
+  "settleMs": 1608,
+  "lerp": null
+ },
+ "pointer": [
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+   "property": "opacity",
+   "changes": 8,
+   "from": "3.14611e-06",
+   "to": "0",
+   "settleMs": 111,
+   "lerp": null,
+   "range": 0.051
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+   "property": "transform",
+   "changes": 7,
+   "from": "translate3d(-27.2399px, 44.6288px, 0px) scale(1)",
+   "to": "translate3d(-25.5009px, 45.9587px, 0px) scale(1)",
+   "settleMs": 95,
+   "lerp": 0.123,
+   "range": 1.729
+  },
+  {
+   "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+   "property": "data-typewriter-phase",
+   "changes": 3,
+   "from": "deleting",
+   "to": "holding",
+   "settleMs": 1603,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+   "property": "opacity",
+   "changes": 1,
+   "from": "0",
+   "to": "1",
+   "settleMs": 111,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+   "property": "transform",
+   "changes": 1,
+   "from": "translate3d(517.148px, 147.495px, 0px)",
+   "to": "translate3d(9.76px, 72.6287px, 0px)",
+   "settleMs": 111,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+   "property": "height",
+   "changes": 1,
+   "from": "0.0020645px",
+   "to": "74.8688px",
+   "settleMs": 111,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+   "property": "data-corners",
+   "changes": 1,
+   "from": "",
+   "to": "",
+   "settleMs": 111,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "main > section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > a.farm-hero-tag",
+   "property": "data-sw-state",
+   "changes": 1,
+   "from": "on",
+   "to": "on",
+   "settleMs": 111,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex > svg",
+   "property": "class",
+   "changes": 1,
+   "from": "+text-white/46 -text-white/88",
+   "to": "+text-white/46 -text-white/88",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex > span.ml-2.shrink-0:nth-of-type(3)",
+   "property": "class",
+   "changes": 1,
+   "from": "+text-white/28 -text-white/64",
+   "to": "+text-white/28 -text-white/64",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex",
+   "property": "aria-current",
+   "changes": 1,
+   "from": "",
+   "to": "",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex",
+   "property": "class",
+   "changes": 1,
+   "from": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+   "to": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex > svg",
+   "property": "class",
+   "changes": 1,
+   "from": "+text-white/88 -text-white/46",
+   "to": "+text-white/88 -text-white/46",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex > span.ml-2.shrink-0:nth-of-type(3)",
+   "property": "class",
+   "changes": 1,
+   "from": "+text-white/64 -text-white/28",
+   "to": "+text-white/64 -text-white/28",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex",
+   "property": "aria-current",
+   "changes": 1,
+   "from": "true",
+   "to": "true",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex",
+   "property": "class",
+   "changes": 1,
+   "from": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+   "to": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.relative.flex:nth-of-type(2) > div.hidden.min-w-0 > div.farm-route-explorer.flex > svg > g:nth-of-type(2)",
+   "property": "data-hot",
+   "changes": 1,
+   "from": "",
+   "to": "",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > path",
+   "property": "d",
+   "changes": 1,
+   "from": "M308,76H314Q320,76 320,70V46Q320,40 326,40H343",
+   "to": "M308,76H314Q320,76 320,70V46Q320,40 326,40H343",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  },
+  {
+   "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > circle",
+   "property": "cy",
+   "changes": 1,
+   "from": "76",
+   "to": "76",
+   "settleMs": 158,
+   "lerp": null,
+   "range": 0
+  }
+ ],
+ "header": {
+  "path": "header.farm-full-rule",
+  "behaviour": "slides away when you scroll down",
+  "changes": []
+ },
+ "navigation": [],
+ "menu": {
+  "button": "button.inline-flex",
+  "changes": [
+   {
+    "path": "aside#nd-sidebar-mobile",
+    "property": "data-state",
+    "from": "open",
+    "to": "open",
+    "atMs": 112,
+    "count": 1
+   },
+   {
+    "path": "aside#nd-sidebar-mobile",
+    "property": "class",
+    "from": "-invisible",
+    "to": "-invisible",
+    "atMs": 112,
+    "count": 1
+   }
+  ],
+  "animations": [
+   {
+    "path": "div#nd-docs-layout > div.fixed.z-40",
+    "kind": "animation",
+    "name": "fd-fade-in",
+    "property": "opacity",
+    "durationMs": 300,
+    "delayMs": 0,
+    "easing": "ease",
+    "keyframes": "[{\"offset\":0,\"easing\":\"ease\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease\",\"opacity\":\"1\"}]",
+    "infinite": false,
+    "startedAt": 125
+   },
+   {
+    "path": "aside#nd-sidebar-mobile",
+    "kind": "animation",
+    "name": "fd-pixel-sidebar-in",
+    "property": "transform",
+    "durationMs": 180,
+    "delayMs": 0,
+    "easing": "ease-out",
+    "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"transform\":\"translate(-100%)\"},{\"offset\":1,\"easing\":\"ease-out\",\"transform\":\"translate(0px)\"}]",
+    "infinite": false,
+    "startedAt": 125
+   }
+  ],
+  "staggerMs": null,
+  "film": {
+   "frames": [
+    0,
+    241,
+    542,
+    677,
+    939,
+    1078
+   ]
+  }
+ },
+ "hovers": [
+  {
+   "path": "main > section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > a.farm-hero-tag",
+   "label": "div.farm-announcement.flex",
+   "changes": [
+    {
+     "path": "main > section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > a.farm-hero-tag",
+     "property": "data-sw-state",
+     "from": "off",
+     "to": "off",
+     "atMs": 506,
+     "count": 1
+    }
+   ],
+   "text": [
+    {
+     "path": "pre#react-compiler-config > code.farm-highlighted-code.block > span.farm-code-typewriter.block:nth-of-type(2)",
+     "kind": "swap",
+     "sequence": [
+      "compiler: true",
+      "compiler: tru",
+      "compiler: tr",
+      "compiler: t",
+      "compiler:",
+      "compiler: {",
+      "compiler: {      m"
+     ],
+     "durationMs": 783,
+     "during": "on hover"
+    },
+    {
+     "path": "div.relative.flex:nth-of-type(2) > div.hidden.min-w-0 > div.farm-route-explorer.flex > svg > text:nth-of-type(1)",
+     "kind": "scramble",
+     "sequence": [
+      "/d▏",
+      "/da▏",
+      "/das▏",
+      "/dash▏",
+      "/dashb▏",
+      "/dashbo▏",
+      "/dashboa▏",
+      "/dashboar▏",
+      "/dashboard▏"
+     ],
+     "durationMs": 262,
+     "during": "on hover"
+    },
+    {
+     "path": "div.farm-hero-title.relative:nth-of-type(2) > h1.max-w-full.font-medium > span.block.whitespace-nowrap:nth-of-type(2) > span.farm-hero-swap > span.farm-hero-swap-text",
+     "kind": "scramble",
+     "sequence": [
+      "1?0&+>=%>=>*",
+      "*?&1>!<1!&#!",
+      "<?0=?01/_!>!",
+      "#<!#>/>##>>=",
+      "!?%1>%#>+0&*0",
+      "…",
+      "product-inte<%>?",
+      "product-inte/<=+",
+      "product-integ%__",
+      "product-integ&>#"
+     ],
+     "durationMs": 319,
+     "during": "on hover"
+    }
+   ],
+   "animations": [
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 18967
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 70,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 19037
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 140,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 19108
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 210,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 19178
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 280,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 19248
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 350,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 19318
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 420,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 19388
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 420,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 18968
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > rect",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 160,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 19328
+    }
+   ],
+   "film": {
+    "frames": [
+     0,
+     213,
+     667
+    ]
+   }
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+   "label": "a.inline-flex.min-h-7",
+   "changes": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+     "property": "height",
+     "from": "0.110233px",
+     "to": "74.8688px",
+     "atMs": 4,
+     "count": 36
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(7.50707px, 70.739px, 0px) scale(0.86)",
+     "to": "translate3d(511.693px, 145.498px, 0px) scale(1)",
+     "atMs": 4,
+     "count": 41
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+     "property": "data-corners",
+     "from": "",
+     "to": "",
+     "atMs": 35,
+     "count": 1
+    }
+   ],
+   "text": [
+    {
+     "path": "pre#react-compiler-config > code.farm-highlighted-code.block > span.farm-code-typewriter.block:nth-of-type(2)",
+     "kind": "typewriter",
+     "sequence": [
+      "compiler: {      mode: \"annotation\",      directive: \"us",
+      "compiler: {      mode: \"annotation\",      directive: \"use",
+      "compiler: {      mode: \"annotation\",      directive: \"use c",
+      "compiler: {      mode: \"annotation\",      directive: \"use co",
+      "compiler: {      mode: \"annotation\",      directive: \"use com",
+      "…",
+      "compiler: {      mode: \"annotation\",      directive: \"use compiler",
+      "compiler: {      mode: \"annotation\",      directive: \"use compiler\"",
+      "compiler: {      mode: \"annotation\",      directive: \"use compiler\",",
+      "compiler: {      mode: \"annotation\",      directive: \"use compiler\",    }"
+     ],
+     "durationMs": 792,
+     "during": "on hover"
+    },
+    {
+     "path": "div.farm-hero-title.relative:nth-of-type(2) > h1.max-w-full.font-medium > span.block.whitespace-nowrap:nth-of-type(2) > span.farm-hero-swap > span.farm-hero-swap-text",
+     "kind": "scramble",
+     "sequence": [
+      "/&%_00=/+#_1#?!#1&",
+      "1#1*=+??/!#</11?#<",
+      "/*!=*=#+?%+&%_#<00",
+      ">_<_?!1+!11/+?&?=_",
+      "#>&!*1&0/&11=_&<0",
+      "1/!1_#>%#0+%_1__!",
+      "%</1#0+/%=_#&=!=*",
+      "<%<+&%<#/<#0?/*&&",
+      "&?=>#!%*?#/+!00>?",
+      "?#><?0%+?=>%+%=_>"
+     ],
+     "durationMs": 70,
+     "during": "on hover"
+    }
+   ],
+   "animations": [
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 21675
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 70,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 21675
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 140,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 21676
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 180,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 21936
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 270,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 21936
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 21936
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 450,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 21936
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 420,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 21777
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > rect",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 160,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 22037
+    }
+   ],
+   "film": {
+    "frames": [
+     0,
+     204,
+     350,
+     501,
+     646,
+     809
+    ]
+   }
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+   "label": "div.relative.z-10",
+   "changes": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(391.735px, 160.938px, 0px) scale(1)",
+     "to": "translate3d(425.954px, 163.338px, 0px) scale(1)",
+     "atMs": 4,
+     "count": 24
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex > svg",
+     "property": "class",
+     "from": "+text-white/46 -text-white/88",
+     "to": "+text-white/46 -text-white/88",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex > span.ml-2.shrink-0:nth-of-type(3)",
+     "property": "class",
+     "from": "+text-white/28 -text-white/64",
+     "to": "+text-white/28 -text-white/64",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex",
+     "property": "aria-current",
+     "from": "",
+     "to": "",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex",
+     "property": "class",
+     "from": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+     "to": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex > svg",
+     "property": "class",
+     "from": "+text-white/88 -text-white/46",
+     "to": "+text-white/88 -text-white/46",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex > span.ml-2.shrink-0:nth-of-type(3)",
+     "property": "class",
+     "from": "+text-white/64 -text-white/28",
+     "to": "+text-white/64 -text-white/28",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex",
+     "property": "aria-current",
+     "from": "true",
+     "to": "true",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex",
+     "property": "class",
+     "from": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+     "to": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "div.relative.flex:nth-of-type(2) > div.hidden.min-w-0 > div.farm-route-explorer.flex > svg > g:nth-of-type(2)",
+     "property": "data-hot",
+     "from": "",
+     "to": "",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > path",
+     "property": "d",
+     "from": "M308,76H314Q320,76 320,70V46Q320,40 326,40H343",
+     "to": "M308,76H314Q320,76 320,70V46Q320,40 326,40H343",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > circle",
+     "property": "cy",
+     "from": "76",
+     "to": "76",
+     "atMs": 48,
+     "count": 1
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(1)",
+     "property": "opacity",
+     "from": "0",
+     "to": "0.2218",
+     "atMs": 365,
+     "count": 29
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(1)",
+     "property": "transform",
+     "from": "translate3d(428.954px, 165.338px, 0px) scale(2.79992)",
+     "to": "translate3d(428.954px, 165.338px, 0px) scale(2.46916)",
+     "atMs": 365,
+     "count": 29
+    },
+    {
+     "path": "main > section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > a.farm-hero-tag",
+     "property": "data-sw-state",
+     "from": "press",
+     "to": "on",
+     "atMs": 365,
+     "count": 2
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(2)",
+     "property": "opacity",
+     "from": "0",
+     "to": "0.3418",
+     "atMs": 480,
+     "count": 22
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(428.954px, 165.338px, 0px) scale(2.8)",
+     "to": "translate3d(428.954px, 165.338px, 0px) scale(1.58925)",
+     "atMs": 480,
+     "count": 22
+    },
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "property": "data-typewriter-phase",
+     "from": "deleting",
+     "to": "deleting",
+     "atMs": 793,
+     "count": 1
+    }
+   ],
+   "text": [],
+   "animations": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "background-color",
+     "property": "backgroundColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"backgroundColor\":\"rgba(0, 0, 0, 0)\"},{\"offset\":1,\"easing\":\"linear\",\"backgroundColor\":\"rgba(255, 255, 255, 0.14)\"}]",
+     "infinite": false,
+     "startedAt": 24918
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-bottom-color",
+     "property": "borderBottomColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderBottomColor\":\"rgba(255, 255, 255, 0.576)\"},{\"offset\":1,\"easing\":\"linear\",\"borderBottomColor\":\"rgb(255, 255, 255)\"}]",
+     "infinite": false,
+     "startedAt": 24918
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-left-color",
+     "property": "borderLeftColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderLeftColor\":\"rgba(255, 255, 255, 0.576)\"},{\"offset\":1,\"easing\":\"linear\",\"borderLeftColor\":\"rgb(255, 255, 255)\"}]",
+     "infinite": false,
+     "startedAt": 24918
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-right-color",
+     "property": "borderRightColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderRightColor\":\"rgba(255, 255, 255, 0.576)\"},{\"offset\":1,\"easing\":\"linear\",\"borderRightColor\":\"rgb(255, 255, 255)\"}]",
+     "infinite": false,
+     "startedAt": 24918
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-top-color",
+     "property": "borderTopColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderTopColor\":\"rgba(255, 255, 255, 0.576)\"},{\"offset\":1,\"easing\":\"linear\",\"borderTopColor\":\"rgb(255, 255, 255)\"}]",
+     "infinite": false,
+     "startedAt": 24919
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+     "kind": "transition",
+     "name": "background-color",
+     "property": "backgroundColor",
+     "durationMs": 150,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"backgroundColor\":\"rgba(255, 255, 255, 0.055)\"},{\"offset\":1,\"easing\":\"linear\",\"backgroundColor\":\"rgba(0, 0, 0, 0)\"}]",
+     "infinite": false,
+     "startedAt": 24985
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+     "kind": "transition",
+     "name": "color",
+     "property": "color",
+     "durationMs": 150,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"color\":\"rgb(255, 255, 255)\"},{\"offset\":1,\"easing\":\"linear\",\"color\":\"rgba(255, 255, 255, 0.4)\"}]",
+     "infinite": false,
+     "startedAt": 24985
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+     "kind": "transition",
+     "name": "background-color",
+     "property": "backgroundColor",
+     "durationMs": 150,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"backgroundColor\":\"rgba(0, 0, 0, 0)\"},{\"offset\":1,\"easing\":\"linear\",\"backgroundColor\":\"rgba(255, 255, 255, 0.055)\"}]",
+     "infinite": false,
+     "startedAt": 24985
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+     "kind": "transition",
+     "name": "color",
+     "property": "color",
+     "durationMs": 150,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"color\":\"rgba(255, 255, 255, 0.4)\"},{\"offset\":1,\"easing\":\"linear\",\"color\":\"rgb(255, 255, 255)\"}]",
+     "infinite": false,
+     "startedAt": 24985
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "transition",
+     "name": "stroke",
+     "property": "stroke",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"stroke\":\"rgba(255, 255, 255, 0.52)\"},{\"offset\":1,\"easing\":\"linear\",\"stroke\":\"rgba(255, 255, 255, 0.26)\"}]",
+     "infinite": false,
+     "startedAt": 24985
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "transition",
+     "name": "stroke",
+     "property": "stroke",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"stroke\":\"rgba(255, 255, 255, 0.28)\"},{\"offset\":1,\"easing\":\"linear\",\"stroke\":\"rgba(255, 255, 255, 0.14)\"}]",
+     "infinite": false,
+     "startedAt": 24985
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 24989
+    }
+   ],
+   "film": {
+    "frames": [
+     0,
+     168,
+     316,
+     500,
+     665,
+     827
+    ]
+   }
+  },
+  {
+   "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+   "label": "a.inline-flex.min-w-0",
+   "changes": [
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "property": "data-typewriter-phase",
+     "from": "deleting",
+     "to": "typing",
+     "atMs": 337,
+     "count": 2
+    }
+   ],
+   "text": [
+    {
+     "path": "pre#react-compiler-config > code.farm-highlighted-code.block > span.farm-code-typewriter.block:nth-of-type(2)",
+     "kind": "typewriter",
+     "sequence": [
+      "compiler: {      mode: \"annotation\",      directive: \"us",
+      "compiler: {      mode: \"annotation\",      directive: \"u",
+      "compiler: {      mode: \"annotation\",      directive: \"",
+      "compiler: {      mode: \"annotation\",      directive:",
+      "compiler: {      mode: \"annotation\",      directive",
+      "…",
+      "compiler: {      mode: \"annot",
+      "compiler: {      mode: \"anno",
+      "compiler: {      mode: \"ann",
+      "compiler: {      mode: \"an"
+     ],
+     "durationMs": 962,
+     "during": "on hover"
+    },
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "kind": "scramble",
+     "sequence": [
+      "vue()",
+      "vue(",
+      "vue",
+      "vu",
+      "v",
+      "…",
+      "sv",
+      "sve",
+      "svel",
+      "svelt"
+     ],
+     "durationMs": 619,
+     "during": "on hover"
+    }
+   ],
+   "animations": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.mt-6.flex > a.inline-flex.min-w-0",
+     "kind": "transition",
+     "name": "background-color",
+     "property": "backgroundColor",
+     "durationMs": 150,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"backgroundColor\":\"rgb(255, 255, 255)\"},{\"offset\":1,\"easing\":\"linear\",\"backgroundColor\":\"rgba(255, 255, 255, 0.88)\"}]",
+     "infinite": false,
+     "startedAt": 27927
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 27560
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 70,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 27560
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 140,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 27561
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 210,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 27561
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 280,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 27561
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 350,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 27561
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 420,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 27561
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 420,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 27661
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > rect",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 160,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 27921
+    }
+   ],
+   "film": null
+  },
+  {
+   "path": "main > section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > a.farm-hero-tag",
+   "label": "button.group.relative",
+   "changes": [
+    {
+     "path": "main > section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > a.farm-hero-tag",
+     "property": "data-sw-state",
+     "from": "off",
+     "to": "off",
+     "atMs": 28,
+     "count": 1
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+     "property": "opacity",
+     "from": "1",
+     "to": "0.443707",
+     "atMs": 531,
+     "count": 16
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+     "property": "transform",
+     "from": "translate3d(9.76px, 72.6287px, 0px)",
+     "to": "translate3d(292.024px, 114.278px, 0px)",
+     "atMs": 531,
+     "count": 16
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+     "property": "height",
+     "from": "74.8688px",
+     "to": "33.2198px",
+     "atMs": 531,
+     "count": 16
+    }
+   ],
+   "text": [
+    {
+     "path": "pre#react-compiler-config > code.farm-highlighted-code.block > span.farm-code-typewriter.block:nth-of-type(2)",
+     "kind": "scramble",
+     "sequence": [
+      "compiler: {",
+      "compiler:",
+      "compiler: t"
+     ],
+     "durationMs": 806,
+     "during": "on hover"
+    },
+    {
+     "path": "div.relative.flex:nth-of-type(2) > div.hidden.min-w-0 > div.farm-route-explorer.flex > svg > text:nth-of-type(1)",
+     "kind": "scramble",
+     "sequence": [
+      "/api▏",
+      "/api/▏",
+      "/api/u▏",
+      "/api/us▏",
+      "/api/use▏",
+      "/api/user▏",
+      "/api/users▏"
+     ],
+     "durationMs": 316,
+     "during": "on hover"
+    },
+    {
+     "path": "div.farm-hero-title.relative:nth-of-type(2) > h1.max-w-full.font-medium > span.block.whitespace-nowrap:nth-of-type(2) > span.farm-hero-swap > span.farm-hero-swap-text",
+     "kind": "scramble",
+     "sequence": [
+      ">_&%#?!/&!%*",
+      "+<_%/_&&<_%*",
+      "#+<<_*1>!>&#",
+      "10>*=00<<+%+",
+      "=#%0+!?0/#/!",
+      "…",
+      "product-integrat1",
+      "product-integrat&",
+      "product-integrate",
+      "product-integrated"
+     ],
+     "durationMs": 508,
+     "during": "on hover"
+    }
+   ],
+   "animations": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "background-color",
+     "property": "backgroundColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"backgroundColor\":\"rgb(255, 255, 255)\"},{\"offset\":1,\"easing\":\"linear\",\"backgroundColor\":\"rgba(0, 0, 0, 0)\"}]",
+     "infinite": false,
+     "startedAt": 29146
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-bottom-color",
+     "property": "borderBottomColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderBottomColor\":\"rgb(255, 255, 255)\"},{\"offset\":1,\"easing\":\"linear\",\"borderBottomColor\":\"rgba(0, 0, 0, 0)\"}]",
+     "infinite": false,
+     "startedAt": 29146
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-left-color",
+     "property": "borderLeftColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderLeftColor\":\"rgb(255, 255, 255)\"},{\"offset\":1,\"easing\":\"linear\",\"borderLeftColor\":\"rgba(0, 0, 0, 0)\"}]",
+     "infinite": false,
+     "startedAt": 29146
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-right-color",
+     "property": "borderRightColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderRightColor\":\"rgb(255, 255, 255)\"},{\"offset\":1,\"easing\":\"linear\",\"borderRightColor\":\"rgba(0, 0, 0, 0)\"}]",
+     "infinite": false,
+     "startedAt": 29146
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-top-color",
+     "property": "borderTopColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderTopColor\":\"rgb(255, 255, 255)\"},{\"offset\":1,\"easing\":\"linear\",\"borderTopColor\":\"rgba(0, 0, 0, 0)\"}]",
+     "infinite": false,
+     "startedAt": 29146
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "color",
+     "property": "color",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"color\":\"rgb(0, 0, 0)\"},{\"offset\":1,\"easing\":\"linear\",\"color\":\"rgba(255, 255, 255, 0.5)\"}]",
+     "infinite": false,
+     "startedAt": 29146
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 28983
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 70,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 29053
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 140,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 29124
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 180,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 29164
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 270,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 29254
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 29344
+    }
+   ],
+   "film": null
+  },
+  {
+   "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+   "label": "div.grid.min-h-9",
+   "changes": [
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "property": "data-typewriter-phase",
+     "from": "deleting",
+     "to": "typing",
+     "atMs": 462,
+     "count": 2
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex > svg",
+     "property": "class",
+     "from": "+text-white/88 -text-white/46",
+     "to": "+text-white/88 -text-white/46",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex > span.ml-2.shrink-0:nth-of-type(3)",
+     "property": "class",
+     "from": "+text-white/64 -text-white/28",
+     "to": "+text-white/64 -text-white/28",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex",
+     "property": "aria-current",
+     "from": "true",
+     "to": "true",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(1) > button.relative.flex",
+     "property": "class",
+     "from": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+     "to": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex > svg",
+     "property": "class",
+     "from": "+text-white/46 -text-white/88",
+     "to": "+text-white/46 -text-white/88",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex > span.ml-2.shrink-0:nth-of-type(3)",
+     "property": "class",
+     "from": "+text-white/28 -text-white/64",
+     "to": "+text-white/28 -text-white/64",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+     "property": "aria-current",
+     "from": "",
+     "to": "",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+     "property": "class",
+     "from": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+     "to": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > path",
+     "property": "d",
+     "from": "M308,48H316Q320,48 320,44V44Q320,40 324,40H343",
+     "to": "M308,48H316Q320,48 320,44V44Q320,40 324,40H343",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > circle",
+     "property": "cy",
+     "from": "48",
+     "to": "48",
+     "atMs": 571,
+     "count": 1
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+     "property": "opacity",
+     "from": "0",
+     "to": "1",
+     "atMs": 583,
+     "count": 20
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(435.916px, 173.3px, 0px) scale(1)",
+     "to": "translate3d(10.4028px, 71.1663px, 0px) scale(0.86)",
+     "atMs": 583,
+     "count": 25
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+     "property": "opacity",
+     "from": "0",
+     "to": "1",
+     "atMs": 1194,
+     "count": 1
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+     "property": "transform",
+     "from": "translate3d(517.135px, 147.494px, 0px)",
+     "to": "translate3d(9.76px, 72.6287px, 0px)",
+     "atMs": 1194,
+     "count": 1
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+     "property": "height",
+     "from": "0.0039106px",
+     "to": "0.537511px",
+     "atMs": 1194,
+     "count": 5
+    }
+   ],
+   "text": [
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "kind": "scramble",
+     "sequence": [
+      "svelte()",
+      "svelte(",
+      "svelte",
+      "svelt",
+      "svel",
+      "…",
+      "s",
+      "​",
+      "p",
+      "pr"
+     ],
+     "durationMs": 750,
+     "during": "on hover"
+    }
+   ],
+   "animations": [
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 30308
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 70,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 30308
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 140,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 30309
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 180,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 30569
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 270,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 30569
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 30569
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > text",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 260,
+     "delayMs": 450,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 30573
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 420,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 30413
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > rect",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 160,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 30673
+    }
+   ],
+   "film": null
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+   "label": "code.flex.h-full",
+   "changes": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > div.farm-sw-select",
+     "property": "height",
+     "from": "45.3745px",
+     "to": "74.8688px",
+     "atMs": 5,
+     "count": 20
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(314.273px, 116.003px, 0px) scale(0.86)",
+     "to": "translate3d(363.209px, 145.498px, 0px) scale(1)",
+     "atMs": 5,
+     "count": 40
+    }
+   ],
+   "text": [
+    {
+     "path": "div.farm-hero-title.relative:nth-of-type(2) > h1.max-w-full.font-medium > span.block.whitespace-nowrap:nth-of-type(2) > span.farm-hero-swap > span.farm-hero-swap-text",
+     "kind": "scramble",
+     "sequence": [
+      "?=><=0?*??!#&+*0=&",
+      "!<0%1=0*=_%<<0=0/=",
+      "=/?&>/*1#<=!+=/+>*",
+      "#&&0=<&1?&++=00*?0",
+      "&_0!#&%*!*=+#%+11",
+      "…",
+      "agent-nativ&+=",
+      "agent-native%",
+      "agent-native0",
+      "agent-native"
+     ],
+     "durationMs": 354,
+     "during": "on hover"
+    }
+   ],
+   "animations": [
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 31602
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 70,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 31602
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 140,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 31603
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 420,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 31703
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > rect",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 160,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 31963
+    }
+   ],
+   "film": null
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+   "label": "button.inline-flex.min-w-9",
+   "changes": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(347.505px, 145.498px, 0px) scale(1)",
+     "to": "translate3d(362.111px, 160.938px, 0px) scale(0.86)",
+     "atMs": 8,
+     "count": 44
+    },
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "property": "data-typewriter-phase",
+     "from": "deleting",
+     "to": "deleting",
+     "atMs": 622,
+     "count": 1
+    }
+   ],
+   "text": [
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "kind": "scramble",
+     "sequence": [
+      "preact()",
+      "preact(",
+      "preact",
+      "preac",
+      "prea",
+      "pre",
+      "pr",
+      "p",
+      "​"
+     ],
+     "durationMs": 162,
+     "during": "on hover"
+    }
+   ],
+   "animations": [
+    {
+     "path": "div#install-command-panel > button.inline-flex.min-w-9",
+     "kind": "transition",
+     "name": "background-color",
+     "property": "backgroundColor",
+     "durationMs": 150,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"backgroundColor\":\"rgba(255, 255, 255, 0.024)\"},{\"offset\":1,\"easing\":\"linear\",\"backgroundColor\":\"rgba(255, 255, 255, 0.075)\"}]",
+     "infinite": false,
+     "startedAt": 33200
+    },
+    {
+     "path": "div#install-command-panel > button.inline-flex.min-w-9",
+     "kind": "transition",
+     "name": "color",
+     "property": "color",
+     "durationMs": 150,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"color\":\"rgba(255, 255, 255, 0.48)\"},{\"offset\":1,\"easing\":\"linear\",\"color\":\"rgb(255, 255, 255)\"}]",
+     "infinite": false,
+     "startedAt": 33200
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 32971
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 70,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 33041
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 140,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 33111
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 210,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 33181
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 280,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 33252
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 420,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 32972
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > rect",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 160,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 33332
+    }
+   ],
+   "film": null
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+   "label": "div.flex.min-w-0",
+   "changes": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(391.095px, 160.938px, 0px) scale(0.86)",
+     "to": "translate3d(425.954px, 163.338px, 0px) scale(1)",
+     "atMs": 5,
+     "count": 32
+    },
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "property": "data-typewriter-phase",
+     "from": "holding",
+     "to": "holding",
+     "atMs": 89,
+     "count": 1
+    },
+    {
+     "path": "main > section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > a.farm-hero-tag",
+     "property": "data-sw-state",
+     "from": "linked",
+     "to": "on",
+     "atMs": 105,
+     "count": 4
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(1)",
+     "property": "opacity",
+     "from": "0",
+     "to": "0.5193",
+     "atMs": 670,
+     "count": 11
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(1)",
+     "property": "transform",
+     "from": "translate3d(428.954px, 165.338px, 0px) scale(2.8)",
+     "to": "translate3d(428.954px, 165.338px, 0px) scale(0.378901)",
+     "atMs": 670,
+     "count": 11
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex > svg",
+     "property": "class",
+     "from": "+text-white/46 -text-white/88",
+     "to": "+text-white/46 -text-white/88",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex > span.ml-2.shrink-0:nth-of-type(3)",
+     "property": "class",
+     "from": "+text-white/28 -text-white/64",
+     "to": "+text-white/28 -text-white/64",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex",
+     "property": "aria-current",
+     "from": "",
+     "to": "",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0 > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0:nth-of-type(2) > button.relative.flex",
+     "property": "class",
+     "from": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+     "to": "+text-white/40 +hover:bg-white/[0.035] +hover:text-white/72 -bg-white/[0.055] -text-white/92",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex > svg",
+     "property": "class",
+     "from": "+text-white/88 -text-white/46",
+     "to": "+text-white/88 -text-white/46",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex > span.ml-2.shrink-0:nth-of-type(3)",
+     "property": "class",
+     "from": "+text-white/64 -text-white/28",
+     "to": "+text-white/64 -text-white/28",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0:nth-of-type(3) > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+     "property": "aria-current",
+     "from": "true",
+     "to": "true",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "li.min-w-0:nth-of-type(3) > div.grid.duration-200 > ul.farm-tree-guide.min-h-0 > li.min-w-0 > button.relative.flex",
+     "property": "class",
+     "from": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+     "to": "+bg-white/[0.055] +text-white/92 -text-white/40 -hover:bg-white/[0.035] -hover:text-white/72",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > path",
+     "property": "d",
+     "from": "M308,132H314Q320,132 320,126V46Q320,40 326,40H343",
+     "to": "M308,132H314Q320,132 320,126V46Q320,40 326,40H343",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "div.relative.z-10 > div.flex.min-w-0 > div.relative.flex:nth-of-type(2) > svg > circle",
+     "property": "cy",
+     "from": "132",
+     "to": "132",
+     "atMs": 684,
+     "count": 1
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(2)",
+     "property": "opacity",
+     "from": "0",
+     "to": "0.6393",
+     "atMs": 787,
+     "count": 4
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(428.954px, 165.338px, 0px) scale(2.79998)",
+     "to": "translate3d(428.954px, 165.338px, 0px) scale(0.206781)",
+     "atMs": 787,
+     "count": 4
+    }
+   ],
+   "text": [
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "kind": "typewriter",
+     "sequence": [
+      "solid",
+      "solid(",
+      "solid()",
+      "solid(),"
+     ],
+     "durationMs": 75,
+     "during": "on hover"
+    },
+    {
+     "path": "pre#react-compiler-config > code.farm-highlighted-code.block > span.farm-code-typewriter.block:nth-of-type(2)",
+     "kind": "scramble",
+     "sequence": [
+      "compiler: true,",
+      "compiler: true",
+      "compiler: tru",
+      "compiler: tr",
+      "compiler: t",
+      "compiler:",
+      "compiler: {",
+      "compiler: {      m",
+      "compiler: {      mo"
+     ],
+     "durationMs": 718,
+     "during": "on hover"
+    },
+    {
+     "path": "div.relative.flex:nth-of-type(2) > div.hidden.min-w-0 > div.farm-route-explorer.flex > svg > text:nth-of-type(1)",
+     "kind": "scramble",
+     "sequence": [
+      "▏",
+      "/▏",
+      "/d▏",
+      "/da▏",
+      "/das▏"
+     ],
+     "durationMs": 128,
+     "during": "on hover"
+    }
+   ],
+   "animations": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-bottom-color",
+     "property": "borderBottomColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderBottomColor\":\"rgba(255, 255, 255, 0.34)\"},{\"offset\":1,\"easing\":\"linear\",\"borderBottomColor\":\"rgba(255, 255, 255, 0.6)\"}]",
+     "infinite": false,
+     "startedAt": 34386
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-left-color",
+     "property": "borderLeftColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderLeftColor\":\"rgba(255, 255, 255, 0.34)\"},{\"offset\":1,\"easing\":\"linear\",\"borderLeftColor\":\"rgba(255, 255, 255, 0.6)\"}]",
+     "infinite": false,
+     "startedAt": 34386
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-right-color",
+     "property": "borderRightColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderRightColor\":\"rgba(255, 255, 255, 0.34)\"},{\"offset\":1,\"easing\":\"linear\",\"borderRightColor\":\"rgba(255, 255, 255, 0.6)\"}]",
+     "infinite": false,
+     "startedAt": 34386
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "border-top-color",
+     "property": "borderTopColor",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"borderTopColor\":\"rgba(255, 255, 255, 0.34)\"},{\"offset\":1,\"easing\":\"linear\",\"borderTopColor\":\"rgba(255, 255, 255, 0.6)\"}]",
+     "infinite": false,
+     "startedAt": 34386
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule > div.relative.z-10 > div.farm-hero-title.relative > a.farm-hero-tag",
+     "kind": "transition",
+     "name": "color",
+     "property": "color",
+     "durationMs": 200,
+     "delayMs": 0,
+     "easing": "linear",
+     "keyframes": "[{\"offset\":0,\"easing\":\"linear\",\"color\":\"rgba(255, 255, 255, 0.5)\"},{\"offset\":1,\"easing\":\"linear\",\"color\":\"rgb(255, 255, 255)\"}]",
+     "infinite": false,
+     "startedAt": 34386
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 33903
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 70,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 33903
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 140,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 33903
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 210,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 33903
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 280,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 33903
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 420,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 34003
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > rect",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 160,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 34263
+    }
+   ],
+   "film": null
+  },
+  {
+   "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(1)",
+   "label": "a.flex.h-16",
+   "changes": [
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(1)",
+     "property": "opacity",
+     "from": "0.2193",
+     "to": "0",
+     "atMs": 5,
+     "count": 14
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(1)",
+     "property": "transform",
+     "from": "translate3d(428.954px, 165.338px, 0px) scale(2.48022)",
+     "to": "translate3d(428.954px, 165.338px, 0px) scale(2.8)",
+     "atMs": 5,
+     "count": 13
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(2)",
+     "property": "opacity",
+     "from": "0.3393",
+     "to": "0",
+     "atMs": 5,
+     "count": 21
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > span.farm-sw-ripple:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(428.954px, 165.338px, 0px) scale(1.61562)",
+     "to": "translate3d(428.954px, 165.338px, 0px) scale(2.79999)",
+     "atMs": 5,
+     "count": 20
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+     "property": "opacity",
+     "from": "1",
+     "to": "0",
+     "atMs": 194,
+     "count": 28
+    },
+    {
+     "path": "section.farm-full-rule.farm-hero-rule:nth-of-type(1) > div.relative.z-10:nth-of-type(1) > div.farm-hero-title.relative:nth-of-type(2) > div.farm-sw-layer > svg:nth-of-type(2)",
+     "property": "transform",
+     "from": "translate3d(425.954px, 163.338px, 0px) scale(1)",
+     "to": "translate3d(435.953px, 173.337px, 0px) scale(1)",
+     "atMs": 194,
+     "count": 27
+    },
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "property": "data-typewriter-phase",
+     "from": "deleting",
+     "to": "deleting",
+     "atMs": 731,
+     "count": 1
+    }
+   ],
+   "text": [
+    {
+     "path": "pre#react-compiler-config > code.farm-highlighted-code.block > span.farm-code-typewriter.block:nth-of-type(2)",
+     "kind": "typewriter",
+     "sequence": [
+      "compiler: {      mode: \"ann",
+      "compiler: {      mode: \"anno",
+      "compiler: {      mode: \"annot",
+      "compiler: {      mode: \"annota",
+      "compiler: {      mode: \"annotat",
+      "…",
+      "compiler: {      mode: \"annotation\",      d",
+      "compiler: {      mode: \"annotation\",      di",
+      "compiler: {      mode: \"annotation\",      dir",
+      "compiler: {      mode: \"annotation\",      dire"
+     ],
+     "durationMs": 806,
+     "during": "on hover"
+    },
+    {
+     "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+     "kind": "typewriter",
+     "sequence": [
+      "solid()",
+      "solid(",
+      "solid",
+      "soli",
+      "sol"
+     ],
+     "durationMs": 69,
+     "during": "on hover"
+    }
+   ],
+   "animations": [
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 35053
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 70,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 35054
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 140,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 35114
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 210,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 35184
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 280,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 35254
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 350,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 35324
+    },
+    {
+     "path": "div.farm-route-explorer.flex > svg > g > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 520,
+     "delayMs": 420,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 35394
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > path",
+     "kind": "animation",
+     "name": "farm-route-draw",
+     "property": "strokeDashoffset",
+     "durationMs": 420,
+     "delayMs": 0,
+     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+     "keyframes": "[{\"offset\":0,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"1px\"},{\"offset\":1,\"easing\":\"cubic-bezier(0.22, 1, 0.36, 1)\",\"strokeDashoffset\":\"0px\"}]",
+     "infinite": false,
+     "startedAt": 35154
+    },
+    {
+     "path": "div.flex.min-w-0 > div.relative.flex > svg > rect",
+     "kind": "animation",
+     "name": "farm-route-fade",
+     "property": "opacity",
+     "durationMs": 160,
+     "delayMs": 360,
+     "easing": "ease-out",
+     "keyframes": "[{\"offset\":0,\"easing\":\"ease-out\",\"opacity\":\"0\"},{\"offset\":1,\"easing\":\"ease-out\",\"opacity\":\"1\"}]",
+     "infinite": false,
+     "startedAt": 35415
+    }
+   ],
+   "film": null
+  }
+ ],
+ "canvases": [
+  {
+   "path": "div.relative > canvas",
+   "kind": "2d",
+   "width": 1240,
+   "height": 384,
+   "fixed": false,
+   "drivenBy": [
+    "time",
+    "scroll"
+   ],
+   "settleMs": 1463,
+   "perFrame": {
+    "clearRect": 1,
+    "fillRect": 5934
+   },
+   "images": [],
+   "shaders": [],
+   "uniforms": []
+  }
+ ],
+ "text": [
+  {
+   "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+   "kind": "typewriter",
+   "sequence": [
+    "prea",
+    "preac",
+    "preact",
+    "preact(",
+    "preact()",
+    "preact(),"
+   ],
+   "durationMs": 156,
+   "during": "on its own"
+  },
+  {
+   "path": "div.relative.flex:nth-of-type(2) > div.hidden.min-w-0 > div.farm-route-explorer.flex > svg > text:nth-of-type(1)",
+   "kind": "scramble",
+   "sequence": [
+    "▏",
+    "/▏",
+    "/d▏",
+    "/da▏",
+    "/das▏",
+    "…",
+    "/dashbo▏",
+    "/dashboa▏",
+    "/dashboar▏",
+    "/dashboard▏"
+   ],
+   "durationMs": 325,
+   "during": "on its own"
+  },
+  {
+   "path": "div.farm-hero-title.relative:nth-of-type(2) > h1.max-w-full.font-medium > span.block.whitespace-nowrap:nth-of-type(2) > span.farm-hero-swap > span.farm-hero-swap-text",
+   "kind": "scramble",
+   "sequence": [
+    "&>!#1>#&__/+",
+    "%=*10+0#=+*!",
+    "?/<_=0/1!??_",
+    "!=+%=??#&=!!<",
+    "0&+1*+1&0*=+_",
+    "…",
+    "product-integrat*",
+    "product-integrat&",
+    "product-integrat_",
+    "product-integrated"
+   ],
+   "durationMs": 436,
+   "during": "on its own"
+  },
+  {
+   "path": "pre#react-compiler-config > code.farm-highlighted-code.block > span.farm-code-typewriter.block:nth-of-type(2)",
+   "kind": "typewriter",
+   "sequence": [
+    "compiler: {      mode: \"annotation\",      directive: \"use compiler\",    },",
+    "compiler: {      mode: \"annotation\",      directive: \"use compiler\",    }",
+    "compiler: {      mode: \"annotation\",      directive: \"use compiler\",",
+    "compiler: {      mode: \"annotation\",      directive: \"use compiler\"",
+    "compiler: {      mode: \"annotation\",      directive: \"use compiler",
+    "…",
+    "compiler: {      mode",
+    "compiler: {      mod",
+    "compiler: {      mo",
+    "compiler: {      m"
+   ],
+   "durationMs": 1795,
+   "during": "while scrolling"
+  },
+  {
+   "path": "pre.min-h-0.max-w-full > code.farm-highlighted-code.block > span.sh__line.sh__line--highlighted:nth-of-type(4) > span.farm-renderer-value:nth-of-type(3) > span.farm-inline-typewriter",
+   "kind": "scramble",
+   "sequence": [
+    "preact()",
+    "preact(",
+    "preact",
+    "preac",
+    "prea",
+    "…",
+    "solid",
+    "solid(",
+    "solid()",
+    "solid(),"
+   ],
+   "durationMs": 991,
+   "during": "while scrolling"
+  },
+  {
+   "path": "pre#react-compiler-config > code.farm-highlighted-code.block > span.farm-code-typewriter.block:nth-of-type(2)",
+   "kind": "swap",
+   "sequence": [
+    "compiler: true",
+    "compiler: tru",
+    "compiler: tr",
+    "compiler: t",
+    "compiler:",
+    "compiler: {",
+    "compiler: {      m"
+   ],
+   "durationMs": 783,
+   "during": "on hover"
+  },
+  {
+   "path": "pre#react-compiler-config > code.farm-highlighted-code.block > span.farm-code-typewriter.block:nth-of-type(2)",
+   "kind": "scramble",
+   "sequence": [
+    "compiler: {",
+    "compiler:",
+    "compiler: t"
+   ],
+   "durationMs": 806,
+   "during": "on hover"
+  }
+ ],
+ "notes": [
+  "navigation: cdpSession.send: Protocol error (Page.captureScreenshot): Not attached to an active page"
+ ]
+}
