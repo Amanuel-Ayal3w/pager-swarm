@@ -1,1 +1,0 @@
-window.__FARM_PROPS__={"params":{},"search":{},"searchParams":{},"path":"/"};window.__FARM_INTEGRATION_API_MANIFEST__={};window.__FARM_ROUTE_SLOTS__=[];

@@ -12,3 +12,7 @@ web/.next/
 web/.env.local
 .DS_Store
 **/.DS_Store
+
+# Dev-only reference. Kept on disk, not part of the repo.
+SRS.md
+styles\ /
