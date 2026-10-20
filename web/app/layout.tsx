@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Script from "next/script";
 
-import { Header } from "@/components/header";
+import { LiveProvider } from "@/components/live";
+import { Shell } from "@/components/shell";
 
 import "./globals.css";
 
@@ -32,10 +34,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${sans.variable} ${pixel.variable} ${mono.variable}`}>
+    <html lang="en" className={`${sans.variable} ${pixel.variable} ${mono.variable}`} suppressHydrationWarning>
       <body className="bg-canvas font-sans text-ink antialiased">
-        <Header />
-        {children}
+        <Script id="pager-theme" strategy="beforeInteractive">
+          {`try{if(localStorage.getItem("pager-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}`}
+        </Script>
+        <LiveProvider>
+          <Shell>{children}</Shell>
+        </LiveProvider>
       </body>
     </html>
   );

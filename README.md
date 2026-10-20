@@ -18,3 +18,5 @@ make web
 ```
 
 The UI listens on `http://127.0.0.1:3000`. `make dev` starts both.
+
+`make seed` loads ten demo incidents so the dashboard, approval screen, trace, and audit log have something to show.

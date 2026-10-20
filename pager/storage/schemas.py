@@ -20,6 +20,8 @@ class IncidentOut(ORMModel):
     resolution: str | None
     thread_id: str | None
     affected_services: list[str]
+    cost_usd: float = 0
+    token_total: int = 0
 
 
 class TaskOut(ORMModel):
@@ -140,3 +142,11 @@ class HealthOut(BaseModel):
     status: str
     database: str
     redis: str
+
+
+class IncidentDetail(IncidentOut):
+    findings: list[FindingOut] = []
+    hypotheses: list[HypothesisOut] = []
+    actions: list[ActionOut] = []
+    tasks: list[TaskOut] = []
+    approvals: list[ApprovalOut] = []

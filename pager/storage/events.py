@@ -26,8 +26,9 @@ def append_audit(
     summary: str,
     payload: dict | None = None,
     incident_id: str | None = None,
+    when: datetime | None = None,
 ) -> StreamEvent:
-    payload = payload or {}
+    payload = {"summary": summary, **(payload or {})}
     last = db.scalar(select(AuditEvent).order_by(AuditEvent.id.desc()).limit(1))
     prev = last.this_hash if last else "0" * 64
     body = json.dumps(
@@ -36,7 +37,7 @@ def append_audit(
         default=str,
     )
     digest = hashlib.sha256(f"{prev}|{body}".encode()).hexdigest()
-    now = _now()
+    now = when or _now()
     db.add(
         AuditEvent(
             timestamp=now,
