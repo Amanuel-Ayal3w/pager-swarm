@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+}
+
+@theme {
+  --font-sans: var(--font-geist), sans-serif;
+  --font-display: var(--font-geist-pixel), var(--font-geist), sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --radius-sm: 3px;
+}
+
+:root {
+  --canvas: #000000;
+  --surface: #070707;
+  --surface-alt: #0e0e0e;
+  --ink: #ffffff;
+  --muted: #7a7a7a;
+  --line: #1f1f1f;
+  --accent: #4ade80;
+  --on-accent: #000000;
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  --canvas: #f6f6f4;
+  --surface: #ffffff;
+  --surface-alt: #ecece8;
+  --ink: #111111;
+  --muted: #5c5c5c;
+  --line: #e2e2e2;
+  --accent: #15803d;
+  --on-accent: #ffffff;
+  color-scheme: light;
+}
+
+html {
+  background: var(--canvas);
+  color: var(--ink);
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 300;
+  font-variant-numeric: tabular-nums;
+  background-color: var(--canvas);
+  background-image:
+    radial-gradient(900px 420px at 0% 0%, color-mix(in srgb, var(--ink) 8%, transparent), transparent 70%),
+    radial-gradient(720px 480px at 100% 0%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 62%);
+  background-attachment: fixed;
+}
+
+.glass {
+  background: color-mix(in srgb, var(--surface) 58%, transparent);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ink) 14%, transparent);
+}
+
+.frame {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--canvas) 0 8px,
+    color-mix(in srgb, var(--ink) 10%, var(--canvas)) 8px 9px
+  );
+}
+
+::selection {
+  background: var(--surface-alt);
+  color: var(--ink);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: 2px;
+}
+
+@keyframes refuse {
+  20%,
+  60% {
+    transform: translateX(-1.5px);
+  }
+  40%,
+  80% {
+    transform: translateX(1.5px);
+  }
+}
+
+.animate-refuse {
+  animation: refuse 450ms ease-in-out both;
+}
+
+@keyframes caret-blink {
+  0%,
+  48% {
+    opacity: 1;
+  }
+  49%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 6px;
+  height: 11px;
+  margin-left: 2px;
+  background: var(--ink);
+  animation: caret-blink 800ms linear infinite;
+  vertical-align: -1px;
+}
+
+@keyframes route-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.route-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: route-draw 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes rail {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.rail {
+  animation: rail 32s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
