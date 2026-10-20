@@ -19,4 +19,4 @@ make web
 
 The UI listens on `http://127.0.0.1:3000`. `make dev` starts both.
 
-`make seed` loads ten demo incidents so the dashboard, approval screen, trace, and audit log have something to show.
+`make seed` loads ten Faker incidents, one for every state. `INC-1048` is a T2 rollback (`rollback api`) and `INC-1042` is a T1 restart. `make simulate` plays one new incident onto the live feed.
