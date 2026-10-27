@@ -11,6 +11,10 @@ dependencies = [
   "pydantic>=2.10",
   "pydantic-settings>=2.6",
   "redis>=5.2",
+  "faker>=40.43.0",
+  "langgraph>=1.2.18",
+  "langgraph-checkpoint-postgres>=3.2.0",
+  "openai>=3.39.0",
 ]
 
 [build-system]
@@ -19,3 +23,8 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["pager"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

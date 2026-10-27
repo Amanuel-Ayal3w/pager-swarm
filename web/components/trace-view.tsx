@@ -62,7 +62,7 @@ export function TraceView({ id }: { id: string }) {
                 </div>
                 <p className="mt-2 text-[16px]">{row.step.response}</p>
                 <p className="mt-2 font-mono text-[11px] text-muted">
-                  {row.step.tool_calls.map((call) => call.tool).filter(Boolean).join(", ") || "no tool"} · {row.step.tokens_in + row.step.tokens_out} tokens · {money(row.step.cost)} · {row.step.latency_ms} ms
+                  {row.step.tool_calls.map((call) => call.name || call.tool).filter(Boolean).join(", ") || "no tool"} · {row.step.tokens_in + row.step.tokens_out} tokens · {money(row.step.cost)} · {row.step.latency_ms} ms
                 </p>
               </>
             ) : (

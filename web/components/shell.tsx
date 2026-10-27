@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { createContext, useContext, useEffect, useState } from "react";
 
 import { useLive } from "@/components/live";
+import { SettingsDialog } from "@/components/settings-dialog";
 import { Sidebar } from "@/components/sidebar";
 import { ThemeToggle } from "@/components/theme";
 import { Button } from "@/components/ui/button";
@@ -38,6 +39,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
   const [operator, setOperator] = useState<string | null | undefined>(undefined);
   const [pending, setPending] = useState(false);
   const [ask, setAsk] = useState(false);
+  const [settings, setSettings] = useState(false);
 
   useEffect(() => {
     const name = readOperator();
@@ -91,6 +93,13 @@ export function Shell({ children }: { children: React.ReactNode }) {
               <ThemeToggle className="h-8 w-8" />
               <button
                 type="button"
+                onClick={() => setSettings(true)}
+                className="h-8 rounded-[3px] border border-line px-3 text-[10px] uppercase tracking-wide text-ink hover:bg-ink/10"
+              >
+                Settings
+              </button>
+              <button
+                type="button"
                 onClick={() => setAsk(true)}
                 disabled={!kill || pending}
                 className={`h-8 rounded-[3px] px-3 text-[10px] uppercase tracking-wide transition-colors duration-150 disabled:opacity-40 ${
@@ -107,6 +116,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           {children}
         </div>
       </div>
+      {settings ? <SettingsDialog onClose={() => setSettings(false)} /> : null}
       {ask && kill ? (
         <div className="fixed inset-0 z-30 flex items-start justify-center bg-ink/40 px-4 pt-24">
           <Panel className="w-full max-w-[360px] p-4 shadow-[0_18px_50px_rgba(0,0,0,0.18)]">

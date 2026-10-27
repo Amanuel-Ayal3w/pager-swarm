@@ -19,4 +19,6 @@ make web
 
 The UI listens on `http://127.0.0.1:3000`. `make dev` starts both.
 
-`make seed` loads ten demo incidents so the dashboard, approval screen, trace, and audit log have something to show.
+`make seed` loads ten Faker incidents, one for every state. `INC-1048` is a T2 rollback (`rollback api`) and `INC-1042` is a T1 restart. `make simulate` plays one new incident onto the live feed.
+
+`make investigate` starts the local target and runs the incident graph. It pauses on a real proposal. Approve it on the board, or run `make approve` and answer `approve? y/n/i`. Set `OPENAI_API_KEY` and `PAGER_MODEL=openai` to use OpenAI. With no key, the graph uses the scripted model. `make eval` grades the swarm against a single agent and writes `evals/report.md`.

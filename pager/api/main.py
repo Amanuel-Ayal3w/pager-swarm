@@ -8,7 +8,7 @@ from sqlalchemy import text
 from pager.config import settings
 from pager.storage.db import SessionLocal, init_db
 from pager.storage.models import KillSwitch
-from pager.api.routes import approvals, audit, incidents, killswitch, stream, traces
+from pager.api.routes import approvals, audit, incidents, killswitch, runs, stream, traces
 
 
 def _ensure_kill_switch() -> None:
@@ -41,6 +41,7 @@ app.add_middleware(
 )
 
 app.include_router(incidents.router, prefix="/api")
+app.include_router(runs.router, prefix="/api")
 app.include_router(traces.router, prefix="/api")
 app.include_router(approvals.router, prefix="/api")
 app.include_router(audit.router, prefix="/api")

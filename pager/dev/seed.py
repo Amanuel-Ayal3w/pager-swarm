@@ -1,8 +1,15 @@
-"""Demo incidents for the operator UI. Replaces whatever is in the pager database."""
+"""Faker demo data. Replaces whatever is in the pager database.
+
+One incident is created for every state. Two of them wait on approval:
+INC-1048 is a T2 rollback (type `rollback api`), INC-1042 is a T1 restart.
+"""
 
 from datetime import datetime, timedelta, timezone
 from uuid import uuid4
 
+from faker import Faker
+
+from pager.dev.catalog import CAUSES, EXCERPTS, FINDINGS, HYPOTHESES, SUMMARIES, TITLES, TRACE_LINES
 from pager.storage.db import SessionLocal, engine, init_db
 from pager.storage.events import append_audit
 from pager.storage.models import (
@@ -17,181 +24,227 @@ from pager.storage.models import (
     TraceStep,
 )
 
+# Stable across machines so the board does not reshuffle on every seed.
+Faker.seed(1048)
+
 
 def _ago(now: datetime, minutes: int) -> datetime:
     return now - timedelta(minutes=minutes)
 
 
+def _evidence(fake: Faker, source: str) -> dict:
+    return {
+        "id": fake.bothify("??-####").lower(),
+        "source": source,
+        "excerpt": fake.random_element(EXCERPTS[source]),
+    }
+
+
+def _trace(fake: Faker, incident_id: str, number: int, when: datetime) -> TraceStep:
+    role, agent, response, tool = TRACE_LINES[(number - 1) % len(TRACE_LINES)]
+    tokens_in = fake.random_int(400, 1600)
+    tokens_out = fake.random_int(80, 280)
+    return TraceStep(
+        incident_id=incident_id,
+        agent_id=agent,
+        agent_role=role,
+        step_no=number,
+        prompt_ref=f"prompt:{role}:{number}",
+        response=response,
+        tool_calls=[{"tool": tool, "tier": "T0"}],
+        tokens_in=tokens_in,
+        tokens_out=tokens_out,
+        cost=round((tokens_in * 3 + tokens_out * 15) / 1_000_000, 4),
+        latency_ms=fake.random_int(120, 900),
+        created_at=when,
+    )
+
+
 def main() -> None:
+    fake = Faker()
     Base.metadata.drop_all(bind=engine)
     init_db()
     db = SessionLocal()
     now = datetime.now(timezone.utc)
+    pinned = {"INC-1048": TITLES[0], "INC-1042": TITLES[1]}
+    pool = [item for item in TITLES if item not in pinned.values()]
+    fake.random.shuffle(pool)
+
+    # Approval cases keep the ids and titles the UI copy uses.
+    plan = [
+        ("DETECTED", "INC-0970", 4),
+        ("INVESTIGATING", "INC-1033", 12),
+        ("DIAGNOSED", "INC-1008", 40),
+        ("AWAITING_APPROVAL", "INC-1048", 18),
+        ("AWAITING_APPROVAL", "INC-1042", 26),
+        ("REMEDIATING", "INC-0988", 34),
+        ("VERIFYING", "INC-0994", 55),
+        ("RESOLVED", "INC-1021", 180),
+        ("ESCALATED", "INC-1014", 70),
+        ("CLOSED_NO_ACTION", "INC-0962", 300),
+    ]
+
+    def take_title(ident: str) -> tuple[str, str, list[str]]:
+        if ident in pinned:
+            return pinned[ident]
+        return pool.pop()
+
     try:
-        specs = [
-            ("INC-1048", "Error rate jumped after deploy", "sev1", "AWAITING_APPROVAL", 18, ["api"], "API 5xx went from 0.2% to 18% two minutes after deploy 4f2c1a. Pooling is off in that diff.", None, None),
-            ("INC-1042", "Worker memory keeps climbing", "sev2", "AWAITING_APPROVAL", 26, ["worker"], "The worker grew from 180 MB to 1.4 GB over 40 minutes. A restart clears it.", None, None),
-            ("INC-1033", "Checkout queries are slow", "sev2", "INVESTIGATING", 12, ["api", "postgres"], "Checkout p95 crossed 800 ms. Investigators are still reading logs and metrics.", None, None),
-            ("INC-1021", "Disk filled on the database host", "sev1", "RESOLVED", 180, ["postgres"], "The database volume hit 98%. Rotated logs were the bulk of it.", "Log volume filled /var.", "Truncated rotated logs and capped the shipper."),
-            ("INC-1014", "Payments dependency timing out", "sev1", "ESCALATED", 70, ["api", "payments"], "Confidence stayed under the bar after the budget ran out.", None, None),
-            ("INC-1008", "Certificate expires tonight", "sev3", "DIAGNOSED", 40, ["api"], "The public certificate expires at 02:00. No action has been proposed yet.", "The leaf certificate on api expires tonight.", None),
-            ("INC-0994", "Cache hit rate collapsed", "sev3", "VERIFYING", 55, ["redis"], "Cache was flushed. Health checks are still watching the hit rate.", "A deploy flushed the hot key set.", "Hit rate is climbing back."),
-            ("INC-0988", "Queue depth stuck above 10k", "sev2", "REMEDIATING", 34, ["worker"], "A scale-up was approved and is in progress.", "One worker replica could not drain the queue.", "Scaling the worker to 3."),
-            ("INC-0970", "Latency above the page budget", "sev4", "DETECTED", 4, ["api"], "The triager opened this from a latency page. No findings yet.", None, None),
-            ("INC-0962", "Spike was a health-check loop", "sev4", "CLOSED_NO_ACTION", 300, ["api"], "A probe loop looked like customer errors. It was not.", "Synthetic checks retrying a closed endpoint.", "No customer impact. Closed with no action."),
-        ]
-        for item in specs:
-            ident, title, severity, state, minutes, services, summary, cause, resolution = item
-            closed = _ago(now, minutes - 20) if state in {"RESOLVED", "CLOSED_NO_ACTION"} else None
+        notes: list[tuple[datetime, str, str, str, str]] = []
+        for state, ident, minutes in plan:
+            title, severity, services = take_title(ident)
+            opened = _ago(now, minutes)
+            closed = _ago(now, max(minutes - 25, 1)) if state in {"RESOLVED", "CLOSED_NO_ACTION"} else None
+            service = services[0]
+            progressed = state != "DETECTED"
+            diagnosed = state not in {"DETECTED", "INVESTIGATING"}
+            acted = state in {"AWAITING_APPROVAL", "REMEDIATING", "VERIFYING", "RESOLVED"}
             db.add(
                 Incident(
                     id=ident,
                     title=title,
-                    summary=summary,
+                    summary=SUMMARIES[title],
                     severity=severity,
                     state=state,
-                    opened_at=_ago(now, minutes),
+                    opened_at=opened,
                     closed_at=closed,
-                    root_cause=cause,
-                    resolution=resolution,
+                    root_cause=CAUSES[title] if diagnosed else None,
+                    resolution=fake.sentence(nb_words=8) if state in {"RESOLVED", "CLOSED_NO_ACTION", "VERIFYING"} else None,
                     thread_id=str(uuid4()),
                     affected_services=services,
                 )
             )
-        db.flush()
+            notes.append((opened, ident, "triager", "incident_opened", f"Opened {severity}. {title}."))
 
-        db.add_all(
-            [
-                Task(incident_id="INC-1033", agent_id="inv-logs", agent_role="investigator", description="Read checkout logs.", status="running", step="Searching error spikes", tokens=1840, created_at=_ago(now, 10)),
-                Task(incident_id="INC-1033", agent_id="inv-metrics", agent_role="investigator", description="Read latency and saturation.", status="running", step="Comparing deploy windows", tokens=960, created_at=_ago(now, 10)),
-                Task(incident_id="INC-1033", agent_id="inv-deploys", agent_role="investigator", description="Read the latest diff.", status="running", step="Opening git diff", tokens=420, created_at=_ago(now, 9)),
-                Task(incident_id="INC-1033", agent_id="inv-infra", agent_role="investigator", description="Check database health.", status="running", step="Reading service health", tokens=610, created_at=_ago(now, 9)),
-                Task(incident_id="INC-0970", agent_id="triager", agent_role="triager", description="Score the latency page.", status="running", step="Opening the incident", tokens=220, created_at=_ago(now, 3)),
-                Task(incident_id="INC-0988", agent_id="executor", agent_role="executor", description="Scale the worker.", status="running", step="Waiting on health", tokens=300, created_at=_ago(now, 6)),
-            ]
-        )
+            if state == "DETECTED":
+                db.add(
+                    Task(
+                        incident_id=ident,
+                        agent_id="triager",
+                        agent_role="triager",
+                        description="Score the new page.",
+                        status="running",
+                        step="Opening the incident",
+                        tokens=fake.random_int(80, 400),
+                        created_at=opened,
+                    )
+                )
+            if state == "INVESTIGATING":
+                for agent, source in (("inv-logs", "logs"), ("inv-metrics", "metrics"), ("inv-deploys", "git"), ("inv-infra", "infra")):
+                    db.add(
+                        Task(
+                            incident_id=ident,
+                            agent_id=agent,
+                            agent_role="investigator",
+                            description=f"Read {source}.",
+                            status="running",
+                            step=f"Reading {source}",
+                            tokens=fake.random_int(200, 1800),
+                            created_at=_ago(now, minutes - 2),
+                        )
+                    )
+            if state == "REMEDIATING":
+                db.add(
+                    Task(
+                        incident_id=ident,
+                        agent_id="executor",
+                        agent_role="executor",
+                        description="Run the approved action.",
+                        status="running",
+                        step="Waiting on health",
+                        tokens=fake.random_int(100, 500),
+                        created_at=_ago(now, 6),
+                    )
+                )
 
-        db.add_all(
-            [
-                Finding(incident_id="INC-1048", agent_id="inv-deploys", summary="Deploy 4f2c1a turned connection pooling off.", evidence_refs=[{"id": "diff-4f2c1a", "source": "git", "excerpt": "pool: false  # was true"}], confidence=0.86, created_at=_ago(now, 14)),
-                Finding(incident_id="INC-1048", agent_id="inv-metrics", summary="5xx rose from 0.2% to 18% within two minutes of that deploy.", evidence_refs=[{"id": "m-5xx", "source": "metrics", "excerpt": "api_error_rate 0.18 at 14:12"}], confidence=0.91, created_at=_ago(now, 13)),
-                Finding(incident_id="INC-1042", agent_id="inv-metrics", summary="Worker RSS climbed for 40 minutes, then dropped after the last restart.", evidence_refs=[{"id": "m-rss", "source": "metrics", "excerpt": "worker rss 1.4GB"}], confidence=0.84, created_at=_ago(now, 20)),
-                Finding(incident_id="INC-1042", agent_id="inv-logs", summary="The resize loop logs a new buffer every request and never frees it.", evidence_refs=[{"id": "log-1842", "source": "worker", "excerpt": "alloc resize buf 12MB"}], confidence=0.78, created_at=_ago(now, 18)),
-                Finding(incident_id="INC-1033", agent_id="inv-logs", summary="Checkout queries wait on a lock in orders.", evidence_refs=[{"id": "log-220", "source": "api", "excerpt": "slow query orders 840ms"}], confidence=0.62, created_at=_ago(now, 8)),
-                Finding(incident_id="INC-1008", agent_id="inv-infra", summary="The leaf certificate on api expires at 02:00.", evidence_refs=[{"id": "cert-api", "source": "infra", "excerpt": "notAfter 02:00Z"}], confidence=0.97, created_at=_ago(now, 30)),
-            ]
-        )
-        db.add_all(
-            [
-                Hypothesis(incident_id="INC-1048", description="Deploy 4f2c1a disabled pooling and exhausted connections.", confidence=0.9, status="supported", created_at=_ago(now, 12)),
-                Hypothesis(incident_id="INC-1048", description="The payments provider is timing out.", confidence=0.15, status="refuted", created_at=_ago(now, 12)),
-                Hypothesis(incident_id="INC-1042", description="The image resize loop leaks one buffer per job.", confidence=0.81, status="supported", created_at=_ago(now, 16)),
-                Hypothesis(incident_id="INC-1042", description="The Redis client is left open.", confidence=0.34, status="open", created_at=_ago(now, 16)),
-                Hypothesis(incident_id="INC-1033", description="A new index is missing on orders.user_id.", confidence=0.58, status="open", created_at=_ago(now, 7)),
-                Hypothesis(incident_id="INC-1008", description="The api certificate expires tonight.", confidence=0.97, status="supported", created_at=_ago(now, 28)),
-            ]
-        )
+            finding_count = 0 if not progressed else 1 if state == "INVESTIGATING" else 2
+            for index in range(finding_count):
+                agent, source, line = FINDINGS[index % len(FINDINGS)]
+                when = _ago(now, max(minutes - 4 - index, 1))
+                db.add(
+                    Finding(
+                        incident_id=ident,
+                        agent_id=agent,
+                        summary=line,
+                        evidence_refs=[_evidence(fake, source)],
+                        confidence=round(fake.pyfloat(min_value=0.55, max_value=0.97), 2),
+                        created_at=when,
+                    )
+                )
+                notes.append((when, ident, agent, "finding", line))
 
-        restart = Action(
-            id="ACT-1042",
-            incident_id="INC-1042",
-            tool="restart_service",
-            args={"service": "worker"},
-            tier="T1",
-            risk="In-flight jobs retry. One stateless replica restarts.",
-            blast_radius="The worker only. API traffic stays up.",
-            rollback_plan="No rollback. The process comes back on its own.",
-            expected_outcome="RSS returns under 200 MB within a minute.",
-            status="proposed",
-            version=1,
-            created_at=_ago(now, 15),
-        )
-        rollback = Action(
-            id="ACT-1048",
-            incident_id="INC-1048",
-            tool="rollback_deploy",
-            args={"service": "api", "to": "b91e0c"},
-            tier="T2",
-            risk="Every API user is restarted onto the previous build for about two minutes.",
-            blast_radius="All API users.",
-            rollback_plan="Redeploy 4f2c1a if the previous build is worse.",
-            expected_outcome="Error rate returns under 1%.",
-            confirmation_phrase="rollback api",
-            status="proposed",
-            version=1,
-            created_at=_ago(now, 11),
-        )
-        scale = Action(
-            id="ACT-0988",
-            incident_id="INC-0988",
-            tool="scale_service",
-            args={"service": "worker", "replicas": 3},
-            tier="T1",
-            risk="More workers share the same queue.",
-            blast_radius="The worker pool.",
-            rollback_plan="Scale back to 1 replica.",
-            expected_outcome="Queue depth falls under 1k.",
-            status="approved",
-            version=1,
-            created_at=_ago(now, 20),
-        )
-        db.add_all([restart, rollback, scale])
-        db.add(
-            Approval(
-                action_id="ACT-0988",
-                operator="on-call",
-                decision="approve",
-                reason=None,
-                typed_confirmation=None,
-                action_version=1,
-                timestamp=_ago(now, 8),
-            )
-        )
+            if progressed:
+                lead = HYPOTHESES[0 if acted or diagnosed else 3]
+                status = "supported" if diagnosed and state != "ESCALATED" else "open"
+                if state == "CLOSED_NO_ACTION":
+                    status = "refuted"
+                when = _ago(now, max(minutes - 6, 1))
+                db.add(
+                    Hypothesis(
+                        incident_id=ident,
+                        description=lead,
+                        confidence=0.42 if state == "ESCALATED" else round(fake.pyfloat(min_value=0.6, max_value=0.95), 2),
+                        status=status,
+                        created_at=when,
+                    )
+                )
+                if finding_count > 1:
+                    db.add(
+                        Hypothesis(
+                            incident_id=ident,
+                            description=HYPOTHESES[1],
+                            confidence=round(fake.pyfloat(min_value=0.1, max_value=0.4), 2),
+                            status="refuted" if diagnosed else "open",
+                            created_at=when,
+                        )
+                    )
+                notes.append((when, ident, "diagnostician", "hypothesis", lead))
 
-        def step(incident_id: str, n: int, role: str, agent: str, response: str, tool: str, minutes: int, tokens_in: int, tokens_out: int) -> TraceStep:
-            return TraceStep(
-                incident_id=incident_id,
-                agent_id=agent,
-                agent_role=role,
-                step_no=n,
-                prompt_ref=f"prompt:{role}:{n}",
-                response=response,
-                tool_calls=[{"tool": tool, "tier": "T0"}],
-                tokens_in=tokens_in,
-                tokens_out=tokens_out,
-                cost=round((tokens_in * 3 + tokens_out * 15) / 1_000_000, 4),
-                latency_ms=180 + n * 40,
-                created_at=_ago(now, minutes),
-            )
+            if acted:
+                tier = "T2" if ident == "INC-1048" else "T1"
+                tool = "rollback_deploy" if tier == "T2" else "restart_service" if ident == "INC-1042" else "scale_service"
+                status = "proposed" if state == "AWAITING_APPROVAL" else "approved"
+                action_id = f"ACT-{ident.removeprefix('INC-')}"
+                when = _ago(now, max(minutes - 7, 1))
+                db.add(
+                    Action(
+                        id=action_id,
+                        incident_id=ident,
+                        tool=tool,
+                        args={"service": service} if tool != "scale_service" else {"service": service, "replicas": 3},
+                        tier=tier,
+                        risk=fake.sentence(nb_words=8),
+                        blast_radius=f"The {service} service.",
+                        rollback_plan=fake.sentence(nb_words=7),
+                        expected_outcome=fake.sentence(nb_words=7),
+                        confirmation_phrase="rollback api" if tier == "T2" else None,
+                        status=status,
+                        version=1,
+                        created_at=when,
+                    )
+                )
+                notes.append((when, ident, "planner", "action_proposed", f"Proposed {tool}. Tier {tier}."))
+                if status == "approved":
+                    approved_at = _ago(now, max(minutes - 12, 1))
+                    db.add(
+                        Approval(
+                            action_id=action_id,
+                            operator="on-call",
+                            decision="approve",
+                            reason=None,
+                            typed_confirmation="rollback api" if tier == "T2" else None,
+                            action_version=1,
+                            timestamp=approved_at,
+                        )
+                    )
+                    notes.append((approved_at, ident, "on-call", "approval", f"Approved {tool}."))
 
-        db.add_all(
-            [
-                step("INC-1048", 1, "triager", "triager", "Opened a sev 1 after the error page.", "query_metrics", 17, 800, 120),
-                step("INC-1048", 2, "investigator", "inv-deploys", "The diff turns pooling off.", "get_git_diff", 14, 1400, 260),
-                step("INC-1048", 3, "diagnostician", "diagnostician", "Pooling is the supported cause.", "search_logs", 12, 900, 180),
-                step("INC-1048", 4, "planner", "planner", "Propose a rollback. This is T2.", "list_recent_deploys", 11, 700, 160),
-                step("INC-1042", 1, "triager", "triager", "Memory slope is not a blip.", "query_metrics", 24, 600, 100),
-                step("INC-1042", 2, "investigator", "inv-logs", "The resize loop keeps the buffer.", "search_logs", 18, 1100, 200),
-                step("INC-1042", 3, "planner", "planner", "Restart the worker. This is T1.", "service_health", 15, 500, 90),
-                step("INC-1033", 1, "investigator", "inv-logs", "Checkout waits on orders.", "search_logs", 8, 700, 140),
-                step("INC-1021", 1, "executor", "executor", "Disk is back under 70%.", "service_health", 160, 400, 80),
-            ]
-        )
+            steps = 1 if state == "DETECTED" else 3 if state == "INVESTIGATING" else 4
+            for number in range(1, steps + 1):
+                db.add(_trace(fake, ident, number, _ago(now, max(minutes - number, 1))))
 
-        notes = [
-            (20, "INC-1048", "triager", "incident_opened", "Opened sev 1. Error rate jumped after deploy."),
-            (16, "INC-1042", "triager", "incident_opened", "Opened sev 2. Worker memory keeps climbing."),
-            (14, "INC-1048", "inv-deploys", "finding", "Deploy 4f2c1a turned pooling off."),
-            (13, "INC-1048", "inv-metrics", "finding", "5xx hit 18% within two minutes."),
-            (12, "INC-1048", "diagnostician", "hypothesis", "Pooling is the leading cause at 0.90."),
-            (11, "INC-1048", "planner", "action_proposed", "Proposed rollback of api. Tier T2."),
-            (18, "INC-1042", "inv-logs", "finding", "Resize loop retains a buffer per job."),
-            (15, "INC-1042", "planner", "action_proposed", "Proposed a worker restart. Tier T1."),
-            (9, "INC-1033", "inv-logs", "finding", "Checkout queries wait on orders."),
-            (8, "INC-0988", "on-call", "approval", "Approved scaling the worker."),
-        ]
-        for minutes, incident_id, actor, kind, summary in sorted(notes, key=lambda item: -item[0]):
-            append_audit(db, actor=actor, event_type=kind, summary=summary, incident_id=incident_id, when=_ago(now, minutes))
+        for when, incident_id, actor, kind, summary in sorted(notes, key=lambda item: item[0]):
+            append_audit(db, actor=actor, event_type=kind, summary=summary, incident_id=incident_id, when=when)
 
         db.add(KillSwitch(id=1, active=False, actor=None, updated_at=now))
         db.commit()

@@ -24,6 +24,7 @@ export type Incident = {
   affected_services: string[];
   cost_usd: number;
   token_total: number;
+  latest_work: string;
 };
 
 export type Task = {
@@ -35,6 +36,7 @@ export type Task = {
   status: string;
   step: string;
   tokens: number;
+  response: string;
   created_at: string;
 };
 
@@ -100,7 +102,7 @@ export type TraceStep = {
   step_no: number;
   prompt_ref: string;
   response: string;
-  tool_calls: { tool?: string; tier?: string }[];
+  tool_calls: { name?: string; tool?: string; tier?: string }[];
   tokens_in: number;
   tokens_out: number;
   cost: number;

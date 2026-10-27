@@ -22,6 +22,7 @@ class IncidentOut(ORMModel):
     affected_services: list[str]
     cost_usd: float = 0
     token_total: int = 0
+    latest_work: str = ""
 
 
 class TaskOut(ORMModel):
@@ -33,6 +34,7 @@ class TaskOut(ORMModel):
     status: str
     step: str
     tokens: int
+    response: str = ""
     created_at: datetime
 
 
@@ -150,3 +152,22 @@ class IncidentDetail(IncidentOut):
     actions: list[ActionOut] = []
     tasks: list[TaskOut] = []
     approvals: list[ApprovalOut] = []
+
+
+class RunIn(BaseModel):
+    scenario: str = "bad_deploy"
+    model: Literal["scripted", "openai"] | None = None
+    api_key: str | None = None
+
+
+class RunOut(BaseModel):
+    paused: bool
+    incident: IncidentDetail
+
+
+class StopIn(BaseModel):
+    incident_id: str | None = None
+
+
+class StopOut(BaseModel):
+    stopped: list[str]
