@@ -9,7 +9,7 @@ from uuid import uuid4
 
 from faker import Faker
 
-from pager.dev.catalog import EXCERPTS, FINDINGS, HYPOTHESES, TITLES, TRACE_LINES
+from pager.dev.catalog import CAUSES, EXCERPTS, FINDINGS, HYPOTHESES, SUMMARIES, TITLES, TRACE_LINES
 from pager.storage.db import SessionLocal, engine, init_db
 from pager.storage.events import append_audit
 from pager.storage.models import (
@@ -103,12 +103,12 @@ def main() -> None:
                 Incident(
                     id=ident,
                     title=title,
-                    summary=fake.sentence(nb_words=12),
+                    summary=SUMMARIES[title],
                     severity=severity,
                     state=state,
                     opened_at=opened,
                     closed_at=closed,
-                    root_cause=fake.sentence(nb_words=8) if diagnosed else None,
+                    root_cause=CAUSES[title] if diagnosed else None,
                     resolution=fake.sentence(nb_words=8) if state in {"RESOLVED", "CLOSED_NO_ACTION", "VERIFYING"} else None,
                     thread_id=str(uuid4()),
                     affected_services=services,

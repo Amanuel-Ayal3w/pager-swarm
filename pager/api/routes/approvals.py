@@ -94,6 +94,37 @@ def decide(action_id: str, body: DecisionIn, db: Session = Depends(get_db)) -> I
         when=now,
     )
     db.commit()
-    db.refresh(incident)
     publish(event)
-    return incident_detail(db, incident)
+    _resume_graph(incident, body, db)
+    db.expire_all()
+    fresh = db.get(type(incident), incident.id)
+    return incident_detail(db, fresh)
+
+
+def _resume_graph(incident, body: DecisionIn, db: Session) -> None:
+    if not incident.thread_id:
+        return
+    from pager.graph.run import resume_if_paused
+
+    try:
+        resume_if_paused(
+            incident.thread_id,
+            {
+                "decision": body.decision,
+                "operator": body.operator,
+                "reason": body.reason or "",
+                "typed_confirmation": body.typed_confirmation or "",
+                "action_version": body.action_version,
+            },
+        )
+    except Exception as exc:
+        event = append_audit(
+            db,
+            actor=body.operator,
+            event_type="state",
+            summary="The graph did not resume.",
+            incident_id=incident.id,
+            payload={"error": type(exc).__name__},
+        )
+        db.commit()
+        publish(event)

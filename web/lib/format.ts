@@ -17,6 +17,19 @@ export function ago(iso: string) {
   return `${Math.round(hours / 24)}d ago`;
 }
 
+export function agentText(value: string) {
+  const text = value.trim();
+  if (!text.startsWith("{")) return text;
+  try {
+    const data = JSON.parse(text) as { description?: unknown; summary?: unknown };
+    if (typeof data.description === "string" && data.description.trim()) return data.description.trim();
+    if (typeof data.summary === "string" && data.summary.trim()) return data.summary.trim();
+  } catch {
+    return text;
+  }
+  return text;
+}
+
 export function money(value: number) {
   if (value === 0) return "$0.00";
   return `$${value.toFixed(value < 0.01 ? 4 : 2)}`;

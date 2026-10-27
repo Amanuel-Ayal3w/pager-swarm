@@ -29,6 +29,32 @@ HYPOTHESES = [
     "The signal is from a health check, not from customers.",
 ]
 
+SUMMARIES = {
+    "Error rate jumped after deploy": "Checkout error rate hit 42% in the minute after the api deploy. Payments calls are timing out.",
+    "Worker memory keeps climbing": "Worker RSS climbs until the process is restarted. The checkout queue backs up while it is down.",
+    "Checkout queries are slow": "orders_by_user is scanning the table. Checkout p95 is past the page budget.",
+    "Disk filled on the database host": "The database disk is at 98%. Writes are failing and the api is returning 500s.",
+    "Payments dependency timing out": "The payments client is timing out. Checkout fails closed while the dependency is slow.",
+    "Certificate expires tonight": "The api certificate expires at 02:00Z. Clients will fail the handshake after that.",
+    "Cache hit rate collapsed": "Redis hit rate fell to 11%. The api is reading through to postgres on every request.",
+    "Queue depth stuck above 10k": "The worker queue is holding above 10,000 jobs and is not draining.",
+    "Latency above the page budget": "The api p95 is above the page budget. The slow path is the checkout read.",
+    "Spike was a health-check loop": "The error spike is the health checker retrying. Customer traffic is steady.",
+}
+
+CAUSES = {
+    "Error rate jumped after deploy": "Deploy api@d4f1 lowered the payments timeout.",
+    "Worker memory keeps climbing": "The worker process leaks memory on the checkout consumer.",
+    "Checkout queries are slow": "orders_by_user does a sequential scan.",
+    "Disk filled on the database host": "The database disk filled and writes started failing.",
+    "Payments dependency timing out": "The payments dependency is past its timeout and the caller does not back off.",
+    "Certificate expires tonight": "The api certificate expires tonight.",
+    "Cache hit rate collapsed": "The cache stopped serving and every read falls through.",
+    "Queue depth stuck above 10k": "The worker is not draining the queue.",
+    "Latency above the page budget": "The checkout read is slower than the page budget.",
+    "Spike was a health-check loop": "The spike is a health-check loop, not customer traffic.",
+}
+
 TRACE_LINES = [
     ("triager", "triager", "Opened the incident from the page.", "query_metrics"),
     ("investigator", "inv-logs", "Read the matching log lines.", "search_logs"),

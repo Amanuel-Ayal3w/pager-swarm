@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from pager.api.serialize import incident_detail, with_cost
+from pager.api.serialize import incident_detail, task_views, with_cost
 from pager.storage.db import get_db
 from pager.storage.models import Incident, Task
 from pager.storage.schemas import IncidentDetail, IncidentOut, TaskOut
@@ -25,5 +25,6 @@ def get_incident(incident_id: str, db: Session = Depends(get_db)) -> IncidentDet
 
 
 @router.get("/agents", response_model=list[TaskOut])
-def list_agents(db: Session = Depends(get_db)) -> list[Task]:
-    return list(db.scalars(select(Task).where(Task.status == "running").order_by(Task.created_at)))
+def list_agents(db: Session = Depends(get_db)) -> list[TaskOut]:
+    rows = list(db.scalars(select(Task).where(Task.status == "running").order_by(Task.created_at)))
+    return task_views(db, rows)
